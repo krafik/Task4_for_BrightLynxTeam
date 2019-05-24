@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    
+}
+
+.bg {
+    position: relative;
+}
+
+.bg::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    background: orange;
+    z-index: 1;
+    margin: 2.55% 5% 0 5%;
+    transform: rotate(-10deg);
+}
+
+.green {
+    border: 2px solid green
+}
+
+
+/* ======================== */
+
+#field {
+    width: 320px;
+    height: 320px;
+    box-sizing: content-box;
+    border: 1px solid black;
+}
+
+#field::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.chess-block {
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+
+.bg-black {
+    background: #525252;
+}
+
+.active {
+    background-color: orange;
+    background-size: contain;
+}
+
+.green {
+    background: green;
+}
+
+.block{
+    display: flex;
+}
+.num, .lett{
+    list-style-type: none;
+}
+.num li{
+    margin-right: 5px;
+    margin-top: 12px;
+    margin-bottom: 22px;
+}
+.lett{
+    display: inline-flex;
+    margin-left: 15px;
+}
+.lett li{
+    margin-left: 14px;
+    margin-right: 15px;
+}
